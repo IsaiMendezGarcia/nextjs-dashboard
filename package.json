@@ -9,6 +9,7 @@
     "@heroicons/react": "^2.2.0",
     "@supabase/supabase-js": "^2.49.1",
     "@tailwindcss/forms": "^0.5.10",
+    "@vercel/postgres": "^0.10.0",
     "autoprefixer": "10.4.20",
     "bcrypt": "^5.1.1",
     "clsx": "^2.1.1",
@@ -28,5 +29,17 @@
     "@types/node": "22.10.7",
     "@types/react": "19.0.7",
     "@types/react-dom": "19.0.3"
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "bcrypt",
+      "bufferutil",
+      "sharp"
+    ],
+    "onlyBuiltDependencies": [
+      "bcrypt",
+      "bufferutil",
+      "sharp"
+    ]
   }
 }
