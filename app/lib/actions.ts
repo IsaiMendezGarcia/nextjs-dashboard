@@ -6,6 +6,7 @@ import postgres from 'postgres';
 
 
 
+
 const FormSchema = z.object({
     id: z.string(),
     customerId: z.string(),
@@ -67,7 +68,6 @@ export async function updateInvoice(id: string, formData: FormData) {
 }
 
 export async function deleteInvoice(id: string) {
-  
   await sql`DELETE FROM invoices WHERE id = ${id}`;
   revalidatePath('/dashboard/invoices');
 }
